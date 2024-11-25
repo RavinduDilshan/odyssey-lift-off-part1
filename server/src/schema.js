@@ -1,5 +1,10 @@
 const gql = require("graphql-tag");
 const typeDefs=gql`
+
+type Query{
+"Query to get tracks array for the homepage grid"
+tracksForHome:[Track!]!
+}
 "A track is a group of modules that teaches about a specific topic"
 type Track {
 id: ID!
@@ -18,9 +23,9 @@ modulesCount: Int
 "Author of a complete track"
 type Author{
 id: ID!
-"authors first and last name"
+"author's first and last name"
 name: String!
-"authors profile pic url"
+"author's profile pic url"
 photo:String
 
 }
