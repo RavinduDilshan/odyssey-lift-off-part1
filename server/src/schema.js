@@ -15,6 +15,16 @@ length: Int
 modulesCount: Int
 }
 
+"Author of a complete track"
+type Author{
+id: ID!
+"authors first and last name"
+name: String!
+"authors profile pic url"
+photo:String
+
+}
+
 
 `;
 module.export=typeDefs;
