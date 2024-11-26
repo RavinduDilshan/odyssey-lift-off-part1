@@ -29,7 +29,5 @@ name: String!
 photo:String
 
 }
-
-
 `;
-module.export=typeDefs;
+module.exports=typeDefs;
